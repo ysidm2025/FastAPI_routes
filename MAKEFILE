@@ -1,0 +1,21 @@
+# Define the project name
+PROJECT_NAME=assign_project
+
+# Build the Docker image
+build:
+	docker build -t $(PROJECT_NAME) .
+
+# Run the container
+run:
+	docker run -p 8000:8000 $(PROJECT_NAME)
+
+# Stop all running containers
+stop:
+	docker stop $$(docker ps -q)
+
+# Remove all stopped containers
+clean:
+	docker rm $$(docker ps -aq)
+
+# Rebuild the image and start the container
+rebuild: stop clean build run

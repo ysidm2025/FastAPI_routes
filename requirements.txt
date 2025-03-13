@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+redis
+docker
+sqlalchemy
+poetry
+psycopg2-binary # Use psycopg2-binary instead of psycopg2   
+pydantic
+python-dotenv
+python-multipart
+openai
+pillow
