@@ -26,24 +26,24 @@ This is a FastAPI project that includes routes for managing students, topics, an
    cd fastapi-project
    
 2. Create and activate a virtual environment :
-python3 -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   * python3 -m venv venv
+   * source venv/bin/activate  # On Windows use: venv\Scripts\activate
    
 3. Install the required dependencies :
-pip install -r requirements.txt
+   * pip install -r requirements.txt
 
 4. Create a .env file in the project root directory and add your environment variables :
-   DATABASE_URL= postgresql://user:password@localhost:5432/Database_name
-   USE_REDIS=true  # or false if Redis is not being used
-   REDIS_HOST=localhost
-   REDIS_PORT=6379
-   OPENAI_API_KEY=your-openai-api-key
+   * DATABASE_URL= postgresql://user:password@localhost:5432/Database_name
+   * USE_REDIS=true  # or false if Redis is not being used
+   * REDIS_HOST=localhost
+   * REDIS_PORT=6379
+   * OPENAI_API_KEY=your-openai-api-key
 
 5. Initialize the PostgreSQL database :
-uvicorn main:app --reload
+   * uvicorn main:app --reload
 
 6. Optionally, start Redis :
-redis-server
+   * redis-server
 
 ## API Screenshots
 
